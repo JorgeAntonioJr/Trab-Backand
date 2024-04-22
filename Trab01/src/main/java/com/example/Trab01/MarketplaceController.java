@@ -15,4 +15,8 @@ public class MarketplaceController {
     public String avaliar(@RequestBody String dados) {
         return marketplaceService.processarDados(dados);
     }
+    @GetMapping("/ajuda")
+    public String obterAjuda() {
+        return "estudante: Jorge Antônio" + "projeto: Consulta de MarketPlace";
+    }
 }
